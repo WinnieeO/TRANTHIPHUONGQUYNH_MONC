@@ -8,9 +8,9 @@ int main()
     double sales, barChart[5];
     int each = 100;
 
-    for (int i = 1; i <= 5; i++)
+    for (int i = 0; i < 5; i++)
     {
-        cout << "Enter today's sales for store " << i << ": ";
+        cout << "Enter today's sales for store " << i + 1 << ": ";
         cin >> sales;
         barChart[i] = sales / each;
     }
@@ -18,10 +18,10 @@ int main()
     // Xuat bieu do ra man hinh
     cout << "SALE BAR CHART\n";
     cout << "(Each * = $100)\n";
-    for (int i = 1; i <= 5; i++)
+    for (int i = 0; i < 5; i++)
     {
         cout << setprecision(0);
-        cout << "Store " << i << ": ";
+        cout << "Store " << i + 1 << ": ";
         for (int j = 1; j <= barChart[i]; j++)
             cout << "*";  
         cout << endl; 
