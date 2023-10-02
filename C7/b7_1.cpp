@@ -1,12 +1,14 @@
 // BT1: Largest/Smallest Array Values
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main()
 {
     double arr[10], max, min;
     
-    arr[0] = max = min;
+    max = 0;
+    min = INT_MAX;
 
     // Nhap cac gia tri phan tu mang
     for (int i = 0; i < 10; i++)

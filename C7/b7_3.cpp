@@ -7,7 +7,8 @@ int main()
     int jars[5], high, low, total;
     string salsa[5] = {"mild", "medium", "sweet", "hot", "zesty"}, highest, lowest;
 
-    high = low = jars[0];
+    high = 0;
+    low = INT_MAX;
 
     // Nhap so lo da ban cho tung loai salsa
     for (int i = 0; i < 5; i++)
@@ -22,17 +23,18 @@ int main()
         }
 
         // Tim san pham ban chay nhat va san phan khong ban chay
-        if (jars[i] < low)
+        if (low > jars[i])
         {
             low = jars[i];
             lowest = salsa[i];
         }
+        
         else if (high < jars[i])
         {
             high = jars[i];
             highest = salsa[i];
         }
-
+        
         // Tinh tong doanh so
         total += jars[i];
     }
@@ -42,14 +44,9 @@ int main()
     {
         // Xuat thong tin doanh so ban hang
         cout << "Sales for " << salsa[i] << " is " << jars[i] << " jars\n";
-        if (highest == salsa[i])
-            cout << highest;
-        if (lowest == salsa[i])
-            cout << lowest;
     }
     cout << "The total sales is " << total << " jars\n";
     cout << "The name of the highest selling products is " << highest << endl;
     cout << "The name of the lowest selling products is " << lowest << endl;
-    cout << lowest;
     return 0;
 }
