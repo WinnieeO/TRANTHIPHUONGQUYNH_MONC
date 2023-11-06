@@ -30,7 +30,7 @@ int main()
         // Hien thi lua chon cua chuong trinh
         computerTurn(computer);
 
-        // Hien thi lua chon cua nguoi choi
+        // Hien thi lua chon cua nguoi dung
         if (you == 1)
             cout << "Rock\n";
         else if (you == 2)
