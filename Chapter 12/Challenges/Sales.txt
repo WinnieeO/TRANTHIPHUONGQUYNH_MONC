@@ -1,0 +1,24 @@
+East:
+First quarter: 1
+Second quarter: 2
+Third quarter: 3
+Fouth quarter: 4
+
+North:
+First quarter: 2
+Second quarter: 4
+Third quarter: 6
+Fouth quarter: 8
+
+West:
+First quarter: 1
+Second quarter: 3
+Third quarter: 5
+Fouth quarter: 7
+
+South:
+First quarter: 5
+Second quarter: 10
+Third quarter: 15
+Fouth quarter: 20
+
